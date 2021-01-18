@@ -1,0 +1,45 @@
+//Code is Written by Panha Sim
+
+#include <iostream>
+
+using namespace std;
+bool isPrime(int i);
+int main()
+{
+    int starting, ending, numPrime;
+  cout<<"Enter starting range: ";
+  cin >> starting;
+  cout<<"Enter ending range: ";
+  cin>>ending;
+  for (int i=starting;i<=ending;i++){
+      if (isPrime(i) && i!=1){
+          cout<<i<<"   ";
+          numPrime+=1;
+      }
+  }
+  cout<<endl;
+  cout<<numPrime<<endl;
+// int i;
+// cin>>i;
+// if(isPrime(i)){
+//     cout<<"Prime";
+// }else {
+//     cout<<"Not Prime";
+// }
+   
+    
+
+}
+bool isPrime(int t){
+   
+    for (int i =2;i<t; i++){
+        if (t%i==0){
+            return false;
+        } else if(t%1!=0) {
+            return true;
+        }
+       
+    }
+}
+//Code is written by Panha Sim
+
