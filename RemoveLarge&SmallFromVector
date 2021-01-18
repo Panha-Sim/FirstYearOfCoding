@@ -24,14 +24,14 @@ int main()
    }
    
    
-   for (int i=0;i<10;i++){
+   for (int i=0;i<v.size();i++){
        if (v[i]>largest){
            largest = v[i];
            lindex = i;
        }
    }
     v.erase(v.begin()+lindex);
-   for(int i=0; i<10;i++){
+   for(int i=0; i<v.size();i++){
         if(v[i]<smallest){
            smallest = v[i];
            sindex = i;
